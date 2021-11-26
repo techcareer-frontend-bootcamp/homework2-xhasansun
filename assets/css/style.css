@@ -1,96 +1,86 @@
-/*============================== GOOGLE FONTS ==============================*/
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
-
-/*=============== Varibles ===============*/
-:root {
-  /********** Colors **********/
-  --first-color: #ffb3b2;
-  --white-color: #fff;
-  --dark-color: #121212;
-  --white-color-text: #fff8f8;
-
-  /********** Fonts **********/
-  --body-font: "Poppins", sans-serif;
-
-  --bigger-font-size: 2.25rem;
-  --big-font-size: 1.5rem;
-  --normal-font-size: 0.813rem;
+body{
+  font-family: 'Roboto', sans-serif;
 }
 
-@media screen and (min-width: 768px) {
-  :root {
-    --bigger-font-size: 4.5rem;
-    --big-font-size: 1.75rem;
-    --normal-font-size: 1rem;
-  }
+.bg-image{
+  background: url(/assets/img/background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100vw;
+
 }
 
-/* Base Css */
-*,
-::before,
-::after {
-  box-sizing: border-box;
-  text-decoration: none;
-  margin: 0;
-  padding: 0;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-body {
-  font-family: var(--body-font);
-  font-size: var(--normal-font-size);
-  overflow: hidden;
-}
-
-h1,
-h2,
-h3,
-p,
-ul {
-  margin: 0;
-  padding: 0;
-}
-
-ul {
-  list-style: none;
-}
-
-a {
-  text-decoration: none;
-  color: #fff;
-  cursor: pointer;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-
-/* Navbar - Menu */
-
-
-
-/* Content */
-
+.container{
+  display: flex;
+  padding: 15px;
+  justify-content: flex-end;
   
+}
 
-/* Social Media */
+.logo{
+      display: flex;
+      justify-content: flex-start;
+      width: 100vw;
+      font-size: 30px;
+}
 
-.social-media {
+.text-color{
+  color: white;
+}
+
+.item{
+  padding: 15px;
+  margin: 15;
+  font-size: 20px;
+  display: flex;
+}
+
+.item a{
+  text-decoration: none;
+  color: black;
+}
+
+.item-right{
+  justify-content: flex-end;
+}
+
+
+.main-container{
+  display: flex;
+  height: 80vh;
+  width: 80vw;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-text{
+  color: white;
+  font-size: 90px;
+  font-weight: 700;
+  margin: 30px;
+}
+
+.icon-color{
+  background-color: #FFC5C1;
+  border-radius: 100%;
+  color: white;
+}
+
+
+.social-media{
+  height: 25px;
   position: fixed;
   right: 3%;
   bottom: 0;
-  background-color: var(--first-color);
-  padding: 0.75rem 1.5rem 0.35rem;
+  background-color: #FFC5C1;
+  padding: 25px;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
 }
-  
-/* Responsive */
-@media screen and (min-width: 768px) {
 
+.social-media a{
+  color: white;
+  text-decoration: none;
 }

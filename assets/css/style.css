@@ -7,8 +7,8 @@ body{
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 100vh;
-  width: 100vw;
+  height: 100%;
+  width: 100%;
 
 }
 
@@ -22,7 +22,7 @@ body{
 .logo{
       display: flex;
       justify-content: flex-start;
-      width: 100vw;
+      width: 100%;
       font-size: 30px;
 }
 
@@ -32,7 +32,6 @@ body{
 
 .item{
   padding: 15px;
-  margin: 15;
   font-size: 20px;
   display: flex;
 }
@@ -42,24 +41,28 @@ body{
   color: black;
 }
 
-.item-right{
-  justify-content: flex-end;
-}
-
 
 .main-container{
   display: flex;
-  height: 80vh;
-  width: 80vw;
+  height: 100%;
   justify-content: space-between;
   align-items: center;
+  margin-left: 50px;
 }
 
 .main-text{
   color: white;
   font-size: 90px;
   font-weight: 700;
-  margin: 30px;
+  margin-top: 200px;
+}
+
+.right{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 100px;
+  margin-top: 200px;
 }
 
 .icon-color{
